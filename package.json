@@ -1,0 +1,21 @@
+{
+    "name": "@ecool/react-native-dlimlib",
+    "version": "1.0.1",
+    "description": "React Native Instant Messaging Service component for iOS + Android",
+    "main": "index.js",
+    "directories": {
+        "lib": "lib"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://git.hzdlsoft.com/ReactNativeLib/DLIM.git"
+    },
+    "dependencies": {
+        "react-native": ">=0.40"
+    },
+    "author": "liyanqin",
+    "license": "MIT"
+}
