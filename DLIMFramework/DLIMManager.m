@@ -67,7 +67,7 @@
  显示最近会话列表
  */
 + (void)showSessionListScreen {
-    DLSessionViewController *sessionListVC = [[DLSessionViewController alloc] init];
+    DLSessionListViewController *sessionListVC = [[DLSessionListViewController alloc] init];
     UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:sessionListVC];
     
     
