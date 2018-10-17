@@ -46,7 +46,19 @@ typedef void (^CompletionBlock)(id responseObject);
  */
 + (void)logout:(CompletionBlock)completion;
 
+
+/**
+ 显示聊天页面
+
+ @param session <#session description#>
+ */
 + (void)showChatScreenWithSession:(NSString *)session;
+
+
+/**
+ 显示最近会话列表
+ */
++ (void)showSessionListScreen;
 
 @end
 

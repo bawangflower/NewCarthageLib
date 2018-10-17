@@ -12,6 +12,7 @@
 #import "DLSessionConfig.h"
 #import "DLCellLayoutConfig.h"
 #import "DLSessionViewController.h"
+#import "DLSessionListViewController.h"
 
 @implementation DLIMManager
 
@@ -56,6 +57,18 @@
     DLSessionViewController *chatController = [[DLSessionViewController alloc] initWithSession:[NIMSession session:session type:NIMSessionTypeTeam]];
     
     UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:chatController];
+    
+    
+    UIViewController *rootViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
+    [rootViewController presentViewController:navi animated:YES completion:nil];
+}
+
+/**
+ 显示最近会话列表
+ */
++ (void)showSessionListScreen {
+    DLSessionViewController *sessionListVC = [[DLSessionViewController alloc] init];
+    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:sessionListVC];
     
     
     UIViewController *rootViewController = [UIApplication sharedApplication].keyWindow.rootViewController;

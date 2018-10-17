@@ -1,0 +1,9 @@
+build/
+Carthage/
+node_modules/
+DLIMiOSExample/
+DLIMiOSExample.xcodeproj
+DLIMiOSExample.xcworkspace
+example/
+.git
+.gitignore
